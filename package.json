@@ -1,0 +1,23 @@
+{
+  "name": "drop-down-menu",
+  "version": "1.0.0",
+  "description": "a simple drop-down menu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexErdei73/Drop-down-menu.git"
+  },
+  "author": "AlexErdei73",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexErdei73/Drop-down-menu/issues"
+  },
+  "homepage": "https://github.com/AlexErdei73/Drop-down-menu#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
