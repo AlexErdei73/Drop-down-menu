@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drop-Down Menu</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                background: gray;
+            }
+            h1 {
+                display: block;
+                width: 30%;
+                text-align: center;
+                margin: 2% auto;
+            }
+            #dropdownmenu {
+                width: 200px;
+                border: 2px solid black;
+                margin: auto;
+            }
+            #menutitle {
+                padding: 5px;
+                border: 1px solid whitesmoke;
+            }
+            #menutitle:hover {
+                background: dodgerblue;
+                color:whitesmoke;
+            }
+            #items {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            li {
+                margin: 0;
+                padding: 5px;
+                border: 1px solid whitesmoke;
+            }
+            .hideitems {
+                transform-origin: top;
+                transform: rotateX(90deg);
+                transition: transform 500ms;
+            }
+            .showitems {
+                transform-origin: top;
+                transform: rotateX(0);
+                transition: transform 500ms;
+            }
+            .active {
+                background: dodgerblue;
+                color:whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Drop-Down Menu</h1>
+        <div id = "dropdownmenu">
+            <div id = "menutitle">
+                Click Me!
+            </div>
+            <ul id = "items">
+                <li id = "0">Item 0</li>
+                <li id = "1">Item 1</li>
+                <li id = "2">Item 2</li>
+            </ul>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
