@@ -31,10 +31,14 @@
                 padding: 0;
                 list-style-type: none;
             }
-            li {
+            #item {
                 margin: 0;
                 padding: 5px;
                 border: 1px solid whitesmoke;
+            }
+            #item:hover {
+                background: dodgerblue;
+                color:whitesmoke;
             }
             .hideitems {
                 transform-origin: top;
@@ -50,6 +54,14 @@
                 background: dodgerblue;
                 color:whitesmoke;
             }
+            #result {
+                width: 200px;
+                height: 50px;
+                margin: 20px auto;
+                border: 2px solid black;
+                text-align: center;
+                line-height: 50px;
+            }
         </style>
     </head>
     <body>
@@ -59,11 +71,12 @@
                 Click Me!
             </div>
             <ul id = "items">
-                <li id = "0">Item 0</li>
-                <li id = "1">Item 1</li>
-                <li id = "2">Item 2</li>
+                <li id = "item">Item 0</li>
+                <li id = "item">Item 1</li>
+                <li id = "item">Item 2</li>
             </ul>
         </div>
+        <div id = "result"></div>
         <script src="main.js"></script>
     </body>
 </html>
