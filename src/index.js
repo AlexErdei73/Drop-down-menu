@@ -2,18 +2,18 @@
 export function DropDownMenu(container, onItemClick) {
     this.container = container;
     this.onItemClick = onItemClick;
-    const list = container.querySelector('#items');
-    const button = container.querySelector('#menutitle');
+    const list = container.querySelector('ul');
+    const button = container.querySelector('div');
 
-    list.classList.add('hideitems');
+    list.classList.add('hide');
 
     button.addEventListener('click', () => {
-        if (list.classList.contains('hideitems')) {
-            list.classList.remove('hideitems');
-            list.classList.add('showitems');
+        if (list.classList.contains('hide')) {
+            list.classList.remove('hide');
+            list.classList.add('show');
         } else {
-            list.classList.remove('showitems');
-            list.classList.add('hideitems');
+            list.classList.remove('show');
+            list.classList.add('hide');
         }
     })
 
